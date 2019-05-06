@@ -70,7 +70,11 @@ public class ConsistenceHash {
         }
     }
 
-    //移除一个节点
+    /**
+     * 移除一个节点
+     *
+     * @param node 物理节点
+     */
     public void removeServer(String node) {
         List<Integer> vitualNodes = this.real2VirtualMap.get(node);
         if (!CollectionUtils.isEmpty(vitualNodes)) {
@@ -82,7 +86,12 @@ public class ConsistenceHash {
         this.realNodes.remove(node);
     }
 
-    //找到数据的存放位置
+    /**
+     * 找到数据的存放位置
+     *
+     * @param key key
+     * @return 物理节点
+     */
     public String getServer(String key) {
         int hash = FNV1_32_HASH.getHash(key);
         //得到大于该hash值得所有虚拟节点
