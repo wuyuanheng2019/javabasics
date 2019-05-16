@@ -1,4 +1,4 @@
-package com.example.javabasics.mq.code;
+package com.example.javabasics.mq.code.nospring;
 
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
