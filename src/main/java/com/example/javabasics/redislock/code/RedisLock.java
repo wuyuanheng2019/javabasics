@@ -4,11 +4,9 @@ package com.example.javabasics.redislock.code;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
-@Component
 @Slf4j
 public class RedisLock {
     @Resource
